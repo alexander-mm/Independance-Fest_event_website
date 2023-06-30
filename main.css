@@ -1,0 +1,384 @@
+*{  
+    text-decoration:none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 5em;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    width: 18em;
+    padding: 2em;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-list {
+    margin: 2em;
+    font-family: 'Neue Metana', sans-serif;
+}
+
+.item-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.video-background {
+    margin-top: 5em;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 91.7vh;
+    z-index: -1;
+}
+  
+.video-background video {
+    /* margin-top: 5em; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}  
+.main-title {
+    position: absolute;
+    font-family: 'Optima nova LT Pro', sans-serif;
+    text-shadow: 8px 6px 5px rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.5em;
+    margin-left: 1.5em;
+    margin-top: 1.25em;
+    color: white;
+    font-size: 6em;
+}
+
+.date {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+.site {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+}
+
+.info-text {
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 2);
+    font-family: 'Neue Metana';
+    font-size: 1.8em;
+    color: white;
+}
+.info-text-aux {
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 2);
+    font-family: 'Neue Metana';
+    font-size: 1em;
+    color: white;
+}
+
+.event-starts {
+    position: absolute;
+    top: 86.5%;
+    left: 2%;
+    opacity: 1;
+}
+.event-starts-text {
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 2);
+    font-family: 'Neue Metana';
+    font-size: 1.2em;
+    color: white;
+}
+
+.countdown {
+    background-color: white;
+    border-radius: 1em;
+    padding: 1.5em;
+    position: absolute;
+    top: 94%;
+    left: 15.8%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.countdown-item {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.countdown-item span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.countdown-item span:first-child {
+    margin-right: 5px;
+}
+.count-number {
+    font-family: 'Athabasca', sans-serif;
+    color: black
+}
+.count-letter {
+    font-family: 'Athabasca', sans-serif;                                      
+    color: black
+}
+
+.buy-tickets {
+    width: 19em;
+    height: 3em;
+    background-color: white;
+    border-radius: 1em;
+    padding: 1em;
+    position: absolute;
+    top: 94%;
+    left: 90.5%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-text{
+    font-size: 1.2em;
+    font-family: 'Athabasca', sans-serif;                                      
+    color: black;
+    text-align: center;
+}
+
+.whatsapp-logo {
+    margin-left: 1.5em;
+    width: 4em;
+}
+
+.locals-section {
+    margin-top: 6em;
+    position: relative;
+    height: 100vh;
+}
+
+.background-section {
+    transform: translateY(0%);
+    width: 100%;
+    height: 100%; /* Ajusta el valor para controlar la altura de la imagen */
+    background-image: url('./src/IndependientFest_2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-container {
+    margin-right: 2em;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; */
+}
+.aletrip {
+    justify-self: center;
+    grid-column: 1 / 3;
+    grid-row: 1 ;
+    width: 280px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 8px 10px 6px rgba(0, 0, 0, 0.5);
+    margin: 2em 2em 1em 3.5em;
+    overflow: hidden;
+}
+.samuelbass {
+    justify-self: center;
+    grid-column: 4 / 6;
+    grid-row: 1 ;
+    width: 280px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 8px 10px 6px rgba(0, 0, 0, 0.5);
+    margin: 2em 2em 1em 3.5em;
+    overflow: hidden;
+}
+.juan-villa {
+    grid-column:1;
+    grid-row: 2 ;
+    width: 280px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 8px 10px 6px rgba(0, 0, 0, 0.5);
+    margin: 2em 1em 3em 3.5em;
+    overflow: hidden;
+}
+.ju-pa {
+    grid-column: 2;
+    grid-row: 2 ;
+    width: 280px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 8px 10px 6px rgba(0, 0, 0, 0.5);
+    margin: 2em 1em 3em 3.5em;
+    overflow: hidden;
+}
+.fallem {
+    grid-column: 3;
+    grid-row: 2 ;
+    width: 280px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 8px 10px 6px rgba(0, 0, 0, 0.5);
+    margin: 2em 1em 3em 3.5em;
+    overflow: hidden;
+}
+.daes {
+    grid-column: 4;
+    grid-row: 2 ;
+    width: 280px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 8px 10px 6px rgba(0, 0, 0, 0.5);
+    margin: 2em 1em 3em 3.5em;
+    overflow: hidden;
+}
+.jhonson {
+    grid-column: 5;
+    grid-row: 2 ;
+    width: 280px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 8px 10px 6px rgba(0, 0, 0, 0.5);
+    margin: 2em 1em 3em 3.5em;
+    overflow: hidden;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}  
+.card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+.card-content h3 {
+    font-family: 'Neue Metana';
+    margin-top: 0;
+}
+.card-content img {
+    width: 3em;
+    margin-bottom: 0.5em;
+}
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+} 
+.btn:hover {
+    background-color: #555;
+}
+  
+.japan-section {
+    margin-top: 6em;
+    position: relative;
+    height: 80vh;
+}
+.background-japan-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    transform: translateY(0%);
+    width: 100%;
+    height: 100%; /* Ajusta el valor para controlar la altura de la imagen */
+    background-image: url('./src/IndependientFesttrue.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.takeshi-title{
+    justify-self: center;
+    align-self: center;
+    grid-column: 1 / 3;
+    grid-row: 2 ;
+    font-family: 'Optima nova LT Pro', sans-serif;
+    text-shadow: 8px 6px 5px rgba(0, 0, 0, 0.8);
+    font-size: 3em;
+    color: white;
+    letter-spacing: 0.3em;
+}
+.japan-title {
+    justify-self: center;
+    align-self: center;
+    grid-column: 4 / 6;
+    grid-row: 2 ;
+    font-family: 'Optima nova LT Pro', sans-serif;
+    text-shadow: 8px 6px 5px rgba(0, 0, 0, 0.8);
+    font-size: 3em;
+    color: white;
+    letter-spacing: 0.3em;
+}
+.takeshi {
+    justify-self: center;
+    grid-column: 1 / 3;
+    box-shadow: 8px 10px 6px rgba(0, 0, 0, 0.5);
+    margin-top: 6em;
+    border-radius: 5em;
+    width: 23em;
+}
+.takeshi2 {
+    justify-self: center;
+    grid-column: 4 / 6;
+    box-shadow: 8px 10px 6px rgba(0, 0, 0, 0.5);
+    margin-top: 6em;
+    border-radius: 5em;
+    width: 23em;
+}
+.japan-image {
+    justify-self: center;
+    align-self: center;
+    grid-column: 3;
+    width: 25em;
+}
+.youtube {
+    grid-column: 3;
+    grid-row: 2;
+    justify-self: center;
+    align-self: center;
+    width: 15em;
+}
+.youtube-text {
+    grid-column: 3;
+    grid-row: 2;
+    justify-self: center;
+    align-self: center;
+    font-family: 'Optima nova LT Pro', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-top: 8em;
+    letter-spacing: 0.15em;
+}
+
+.footer {
+    margin-top: 0em;
+    position: relative;
+    height: 12vh;
+    background-color: black;
+    z-index: 100;
+}
