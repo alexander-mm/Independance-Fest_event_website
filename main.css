@@ -24,6 +24,9 @@ header {
     width: 18em;
     padding: 2em;
 }
+.logo-mobile {
+    display: none;
+}
 
 .list {
     display: flex;
@@ -54,7 +57,11 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}  
+}
+
+.title-container-mobile {
+    display: none;
+}
 .main-title {
     position: absolute;
     font-family: 'Optima nova LT Pro', sans-serif;
@@ -93,8 +100,7 @@ header {
 .event-starts {
     position: absolute;
     top: 86.5%;
-    left: 2%;
-    opacity: 1;
+    left: 1.2%;
 }
 .event-starts-text {
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 2);
@@ -109,24 +115,20 @@ header {
     padding: 1.5em;
     position: absolute;
     top: 94%;
-    left: 15.8%;
+    left: 13%;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 1;
 }
-
 .countdown-item {
     text-align: center;
     margin: 0 10px;
 }
-
 .countdown-item span {
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 1.1em;
 }
-
 .countdown-item span:first-child {
     margin-right: 5px;
 }
@@ -153,14 +155,12 @@ header {
     justify-content: center;
     align-items: center;
 }
-
 .buy-text{
     font-size: 1.2em;
     font-family: 'Athabasca', sans-serif;                                      
     color: black;
     text-align: center;
 }
-
 .whatsapp-logo {
     margin-left: 1.5em;
     width: 4em;
@@ -199,7 +199,7 @@ header {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 8px 10px 6px rgba(0, 0, 0, 0.5);
-    margin: 2em 2em 1em 3.5em;
+    margin: 2em 2em 2.7em 3.5em;
     overflow: hidden;
 }
 .samuelbass {
@@ -210,7 +210,7 @@ header {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 8px 10px 6px rgba(0, 0, 0, 0.5);
-    margin: 2em 2em 1em 3.5em;
+    margin: 2em 2em 2.7em 3.5em;
     overflow: hidden;
 }
 .juan-villa {
@@ -381,4 +381,157 @@ header {
     height: 12vh;
     background-color: black;
     z-index: 100;
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        flex-wrap: wrap;
+        top: 0%;
+        width: 100%;
+        height: 5.5em;
+        background-color: black;
+        z-index: 100;        
+    }
+   
+    .logo {
+        display: none;
+    }
+    .logo-mobile {
+        display:inline;
+        margin: 0em 5em 0em 1em;
+        width: 3.5em;
+    }
+
+    .video-background {
+        top: -10;
+        left: 0;
+        width: auto;
+        height: 100vh;
+        z-index: -1;
+        overflow: hidden;
+    }
+    .video-background video {
+        object-fit: cover;
+    }
+
+    .title-container {
+        display: none;
+    }
+    .title-container-mobile {
+        display: inline;
+    }
+    .main-title {
+        position: absolute;
+        margin-left: 0.2em;
+        letter-spacing: 0.2em;
+        font-size: 2.5em;
+        padding-left: 0.15em;
+    }
+    .main-title-mobile {
+        position: absolute;
+        font-family: 'Optima nova LT Pro', sans-serif;
+        text-shadow: 8px 6px 5px rgba(0, 0, 0, 0.8);
+        letter-spacing: 0.2em;
+        padding: 2.5em 0em 0em 5.4em;;
+        color: white;
+        font-size: 2.5em;
+    }
+
+    .info-text {
+    font-size: 1em;
+    }
+
+    .date {
+        top: 35%;
+        left: 30%;       
+    }
+    
+    .site {
+        top: 50%;
+        left: 30%;
+    }
+
+    .event-starts {
+        top: 85%;
+        left: 5%;
+    }
+    .event-starts-text {
+        font-size: 1em;
+    }
+    .countdown {
+        top: 93%;
+        left: 40%;
+        padding: 0.5em;
+    }
+    .countdown-item span {
+        font-size: 1em;
+    }
+
+    .buy-tickets {
+        position: fixed;
+        width: 0%;
+        height: 0%;
+        background-color: transparent;
+        padding: 0em 2em 1em 0em;
+        z-index: 100;
+    }
+    .buy-text{
+        display: none;
+    }
+    .whatsapp-logo {
+        margin-left: 1.7em;
+        width: 3.5em;
+    }
+
+    .locals-section {
+        margin-top: 0em;
+        position: relative;
+        height: 200em;
+    }
+    .card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    }
+
+    .japan-section {
+        margin-top: 0em;
+        position: relative;
+        height: 126em;
+    }
+    .background-japan-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+    }
+    .takeshi-title{
+        margin-top: 1.5em;
+        text-align: center;
+    }
+    .takeshi2 {
+        margin-top: 4em;
+    }
+    .japan-image {
+        margin-top: 1em;
+    }
+    .youtube {
+        margin-top: 3em;
+    }
+    .youtube-text { 
+    text-align: center;
+    margin-top: -4em;
+    font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    
 }
