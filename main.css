@@ -35,6 +35,7 @@ header {
 }
 .icon {
     margin: 0em 0.5em 0em 5em;
+    padding: 0.5em;
 }
 .home-icon {
     width: 1em;
@@ -355,7 +356,7 @@ header {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    margin-top: 0em;
+    padding: 2em;
     position: relative;
     background-color: black;
     z-index: 100;
@@ -390,7 +391,7 @@ header {
 
 }
 .logo-dev {
-    padding: 2em;
+    padding-left: 1em;
     grid-column: 4;
     grid-row: 1;
     justify-self: start;
@@ -535,32 +536,51 @@ header {
     .japan-section {
         margin-top: 0em;
         position: relative;
-        height: 126em;
-    }
+        height: 108em;    }
     .background-japan-section {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(7, 1fr);
     }
+
+    .takeshi {
+        grid-column: 1 / 3;
+        grid-row: 1;
+    } 
     .takeshi-title{
-        margin-top: 1.5em;
-        text-align: center;
+        grid-column: 1 / 3;
+        grid-row: 2;
+        margin: 1em 0 1em 0
     }
+    .japan-image{
+        grid-column: 1 / 3;
+        grid-row: 3;
+    }
+    .japan-title {
+        grid-column: 1 / 3;
+        grid-row: 4;
+        margin: 1em 0 1em 0;
+    }
+    
     .takeshi2 {
-        margin-top: 4em;
-    }
-    .japan-image {
-        margin-top: 1em;
+        grid-column: 1 / 3;
+        grid-row: 5;
+        margin: 0;
+        padding: 0;
     }
     .youtube {
-        margin-top: 3em;
+        grid-column: 1 / 3;
+        grid-row: 6;
+        position: relative;
+        align-self: center;
     }
-    .youtube-text { 
-    text-align: center;
-    margin-top: -4em;
-    font-size: 2em;
+    .youtube-text {
+        margin-top: 0;
+        justify-self: center;
+        align-self:flex-end;
+        grid-column: 1 / 3;
+        grid-row: 6;
+        font-size: 2em;
     }
 
     .footer {
@@ -1370,6 +1390,69 @@ header {
         grid-column: 1 / 3;
         grid-row: 7;
         font-size: 2em;
+    }
+    .footer {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        position: relative;
+        background-color: black;
+        z-index: 100;
+    }
+    .logo-ipi-footer{
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: start;
+        align-self: center;
+        padding: 01em;
+        width: 18em;
+    }
+    
+    .fcbk-ipi{
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
+        align-self: center;
+        padding-left: 3em;
+    }
+    .insta-ipi{
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: end;
+        align-self: center;
+        padding-right: 5em;
+    }
+    .text-dev{
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 3em;
+        justify-self: center;
+        align-self: center;
+    
+    }
+    .logo-dev {
+        grid-column: 1;
+        grid-row: 3;
+        padding: 1em;
+        justify-self: center;
+        align-self: center;
+    }
+    .git-dev{
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: start;
+        align-self: center;
+        width: 3em;
+        padding-left: 3em;
+    }
+    .insta-dev{
+        grid-column: 1;
+        grid-row: 3;
+        margin-right: 0em;
+        justify-self: end;
+        align-self: center;
+        width: 3em;
+        padding-right: 5em;
     }
     
 }
