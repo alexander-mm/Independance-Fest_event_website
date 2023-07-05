@@ -95,15 +95,15 @@
 
     <div class="countdown">
         <div class="countdown-item">
-            <span class="count-number">00</span>
+            <span class="count-number" id="days">00</span>
             <span class="count-letter">DIAS</span>
         </div>
         <div class="countdown-item">
-            <span class="count-number">00</span>
+            <span class="count-number" id="hours">00</span>
             <span class="count-letter">HORAS</span>
         </div>
         <div class="countdown-item">
-            <span class="count-number">00</span>
+            <span class="count-number" id="minutes">00</span>
             <span class="count-letter">MINUTOS</span>
         </div>
     </div>
@@ -207,5 +207,38 @@
 
 
 </body>
+<script>
+    // Establecer la fecha y hora objetivo (15 de julio de 2023 a las 4:00 pm)
+    const targetDate = new Date("July 15, 2023 16:00:00").getTime();
+
+    // Actualizar el contador cada segundo
+    const countdownInterval = setInterval(() => {
+        // Obtener la fecha y hora actual
+        const currentDate = new Date().getTime();
+
+        // Calcular la diferencia entre la fecha objetivo y la fecha actual
+        const difference = targetDate - currentDate;
+
+        // Calcular los días, horas y minutos restantes
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+
+        // Actualizar los elementos del contador en la página web
+        document.getElementById("days").textContent = formatTime(days);
+        document.getElementById("hours").textContent = formatTime(hours);
+        document.getElementById("minutes").textContent = formatTime(minutes);
+
+        // Detener el contador cuando llegue a cero
+        if (difference <= 0) {
+            clearInterval(countdownInterval);
+        }
+    }, 1000);
+
+    // Función para formatear el tiempo a dos dígitos (agregando un cero al inicio si es necesario)
+    function formatTime(time) {
+        return time < 10 ? `0${time}` : time;
+    }
+</script>
 
 </html>
