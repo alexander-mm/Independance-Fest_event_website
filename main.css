@@ -358,11 +358,21 @@ header {
 }
 
 .photo-container {
-    padding-top: 3em;
+    padding-top: 1em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+.last-event-title {
+    justify-self: center;
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Optima nova LT Pro', sans-serif;
+    text-shadow: 6px 4px 6px rgba(0, 0, 0, 1);
+    letter-spacing: 0.15em;
+    color: white;
+    padding: 0.5em;
 }
 .photo-item {
     margin: 2em;
@@ -606,6 +616,9 @@ header {
         position: relative;
         height: auto;
     }
+    .last-event-title {
+        font-size: 3em;
+    }
 
     .footer {
         display: grid;
@@ -804,6 +817,9 @@ header {
         margin-top: 6em;
         position: relative;
         height: auto;
+    }
+    .last-event-title {
+        font-size: 3em;
     }
     
     .footer {
