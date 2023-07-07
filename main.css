@@ -183,7 +183,7 @@ header {
 .locals-section {
     margin-top: 6em;
     position: relative;
-    height: 100vh;
+    height: auto;
 }
 
 .background-section {
